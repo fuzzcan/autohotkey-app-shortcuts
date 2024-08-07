@@ -1,10 +1,6 @@
 ﻿F14::
 SetTitleMatchMode, 2
-IfWinExist, chris@stone
-{
-    WinActivate
-}
-else IfWinExist, Windows PowerShell
+IfWinExist, ahk_exe WindowsTerminal.exe
 {
     WinActivate
 }
@@ -53,13 +49,13 @@ return
 
 F18::
 SetTitleMatchMode, 2
-IfWinExist, ahk_class CabinetWClass
+IfWinExist, ahk_exe explorer.exe
 {
     WinActivate
 }
 else
 {
-    Run, explorer
+    Run, explorer.exe
 }
 return
 
